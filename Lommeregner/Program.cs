@@ -11,7 +11,7 @@ namespace Lommeregner
             Calculator c = new Calculator();
             int x = 0;
             int y = 0;
-            int menuValg = 0;
+            int choice = 0;
             /*Console.WriteLine("Gange");
             Console.WriteLine(c.Multi(x, y));
             Console.WriteLine("Plus");
@@ -30,8 +30,8 @@ namespace Lommeregner
                 Console.WriteLine("5: Exit program\n");
 
                 try {
-                    menuValg = Convert.ToInt32(Console.ReadLine());
-                    switch (menuValg)
+                    choice = Convert.ToInt32(Console.ReadLine());
+                    switch (choice)
                     {
                     
                         case 1:
@@ -104,7 +104,7 @@ namespace Lommeregner
                 catch(FormatException) {
                     Console.WriteLine("\nEnter a number");
                 }
-            } while(menuValg != 5);
+            } while(choice != 5);
         }
     }
 }
