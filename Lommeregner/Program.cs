@@ -12,14 +12,6 @@ namespace Lommeregner
             int x = 0;
             int y = 0;
             int choice = 0;
-            /*Console.WriteLine("Gange");
-            Console.WriteLine(c.Multi(x, y));
-            Console.WriteLine("Plus");
-            Console.WriteLine(c.Add(x, y));
-            Console.WriteLine("Minus");
-            Console.WriteLine(c.Subtract(x, y));
-            Console.WriteLine("Dele");
-            Console.WriteLine(c.Divide(x, y));*/
 
             do {
                 Console.Clear();
