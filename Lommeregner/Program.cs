@@ -9,8 +9,8 @@ namespace Lommeregner
         static void Main(string[] args)
         {
             Calculator c = new Calculator();
-            int x = 10;
-            int y = 10;
+            int x = 0;
+            int y = 0;
             int menuValg = 0;
             /*Console.WriteLine("Gange");
             Console.WriteLine(c.Multi(x, y));
@@ -37,7 +37,7 @@ namespace Lommeregner
                         case 1:
                         Console.WriteLine("\nEnter the first number:");
                         x = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Enter the second number:");
+                        Console.WriteLine("\nEnter the second number:");
                         y = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine($"\n{x} * {y} = {c.Multi(x, y)}");
                         Console.WriteLine("\nPress Enter to continue..");
@@ -56,24 +56,27 @@ namespace Lommeregner
                         {
                             Console.WriteLine("\nEnter the first number:");
                             x = Convert.ToInt32(Console.ReadLine());
-                            Console.WriteLine("Enter the second number:");
+                            Console.WriteLine("\nEnter the second number:");
                             y = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine($"\n{x} / {y} = {c.Divide(x, y)}");
+                            Console.WriteLine("\nPress Enter to continue..");
                             Console.ReadLine();
                             }
                         catch (DivideByZeroException)
                         {
                             Console.WriteLine("\nYou can't divide by 0");
-                        }
                             Console.WriteLine("\nPress Enter to continue..");
+                            Console.ReadLine();
+                            }
                             break;
 
                         case 3:
                         Console.WriteLine("\nEnter the first number:");
                         x = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Enter the second number:");
+                        Console.WriteLine("\nEnter the second number:");
                         y = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine($"\n {x} + {y} = {c.Add(x, y)}");
+                        Console.WriteLine($"\n{x} + {y} = {c.Add(x, y)}");
+                        Console.WriteLine("\nPress Enter to continue..");
                         Console.ReadLine();
                             break;
 
@@ -82,7 +85,7 @@ namespace Lommeregner
                         x = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("\nEnter the second number:");
                         y = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine($"\n {x} - {y} = {c.Subtract(x, y)}");
+                        Console.WriteLine($"\n{x} - {y} = {c.Subtract(x, y)}");
                         Console.WriteLine("\nPress Enter to continue..");
                         Console.ReadLine();
                             break;
@@ -93,9 +96,9 @@ namespace Lommeregner
                         break;
 
                         default:
-                        Console.WriteLine("\nWrong input. Try again");
-                        Console.WriteLine("Press Enter to continue");
-                            break;
+                        Console.WriteLine("\nWrong input. Press Enter to continue");
+                        Console.ReadLine();
+                        break;
                     }
                 }
                 catch(FormatException) {
