@@ -27,7 +27,7 @@ namespace Lommeregner
                 Console.WriteLine("2: Divide (/)");
                 Console.WriteLine("3: Add (+)");
                 Console.WriteLine("4: Subtract(-)");
-                Console.WriteLine("5: Exit program\n");
+                Console.WriteLine("5: Exit calculator\n");
 
                 try {
                     choice = Convert.ToInt32(Console.ReadLine());
